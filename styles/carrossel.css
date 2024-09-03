@@ -1,0 +1,90 @@
+/* Estilo para o título do carrossel */
+.carrossel_titulo {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 1.125rem; /* Define o tamanho da fonte do título */
+    font-family: var(--fonte-principal); /* Define a fonte do título usando a variável CSS --fonte-principal */
+    color: var(--laranja); /* Define a cor do texto como laranja */
+    font-weight: 700; /* Define o peso da fonte como negrito */
+    font-style: normal; /* Garante que a fonte não seja itálica */
+    background-color: var(--branco); /* Define a cor de fundo do título como branca */
+    padding: 1em; /* Adiciona preenchimento interno de 1em */
+    text-transform: uppercase; /* Converte o texto para maiúsculas */
+}
+
+/* Estilo para as imagens dentro dos slides do carrossel */
+.swiper-slide img {
+    width: 100%; /* Faz com que as imagens ocupem toda a largura do slide */
+}
+
+/* Estilo para a paginação do carrossel */
+.swiper-pagination {
+    position: initial; /* Define a posição da paginação como inicial (padrão) */
+}
+
+/* Estilos específicos para telas com largura máxima de 425px (smartphones) */
+@media (max-width: 425px) {
+    .carrossel_titulo {
+        font-size: 1rem; /* Reduz o tamanho da fonte do título */
+        padding: 0.5em; /* Reduz o padding interno do título */
+    }
+    
+    .swiper-slide img {
+        width: 100%; /* Garante que as imagens ocupem toda a largura do slide */
+    }
+    
+    .swiper-pagination {
+        position: initial; /* Mantém a posição inicial da paginação */
+    }
+}
+
+/* Estilos específicos para telas com largura entre 450px e 1024px (tablets) */
+@media (min-width: 450px) and (max-width: 1024px) {
+    .swiper-slide {
+        scale: 75%; /* Reduz a escala dos slides para 75% */
+    }
+
+    .card {
+        scale: 75%; /* Reduz a escala dos cartões para 75% */
+    }
+}
+
+/* Estilos específicos para telas com largura entre 1024px e 1440px (desktop) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .swiper-slide {
+        width: 60%; /* Define a largura dos slides como 60% do elemento pai */
+        scale: 85%; /* Reduz a escala dos slides para 85% */
+    }
+
+    .card {
+        width: 60%; /* Define a largura dos cartões como 60% do elemento pai */
+        scale: 85%; /* Reduz a escala dos cartões para 85% */
+    }
+}
+
+/* Estilos específicos para telas com largura mínima de 1441px (large desktop) */
+@media (min-width: 1441px) {
+    .swiper-slide {
+        width: 50%; /* Define a largura dos slides como 50% do elemento pai */
+        scale: 75%; /* Reduz a escala dos slides para 75% */
+    }
+
+    .swiper {
+        width: 50%; /* Define a largura do carrossel como 50% do elemento pai */
+    }
+
+    .card {
+        justify-content: center; /* Centraliza o conteúdo dos cartões */
+        width: 50%; /* Define a largura dos cartões como 50% do elemento pai */
+    }
+
+    .carrosel {
+        display: flex; /* Usa o layout flexível para o container do carrossel */
+        flex-direction: row; /* Alinha os itens em uma linha horizontal */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Alinha os itens verticalmente ao centro */
+    }
+
+    .swiper-pagination {
+        position: inherit; /* Define a posição da paginação como herdada (padrão) */
+    }
+}

@@ -1,0 +1,16 @@
+/* Estiliza o elemento <footer> */
+footer {
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    max-width: 100vw; /* Define a largura máxima como 100% da viewport */
+    display: flex; /* Adiciona o layout flexível ao footer */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 1.1rem 18rem 1.5rem 1.5rem; /* Define o preenchimento interno do footer (superior, direito, inferior, esquerdo) */
+    background-color: var(--cor-branco); /* Define a cor de fundo usando a variável CSS --cor-branco */
+}
+
+/* Estiliza a classe .rodape_titulo dentro do footer */
+.rodape_titulo {
+    font-size: 1em; /* Define o tamanho da fonte */
+    font-weight: 600; /* Define o peso da fonte */
+    font-family: var(--fonte-principal); /* Define a fonte usando a variável CSS --fonte-principal */
+}

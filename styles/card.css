@@ -1,0 +1,85 @@
+/* Estilos para o card */
+.card {
+  background-color: var(--branco); /* Define a cor de fundo do card */
+  border-radius: 0.625em; /* Arredonda os cantos do card */
+  padding: 1em; /* Espaçamento interno do card */
+  margin: 1em; /* Espaçamento externo ao redor do card */
+  box-shadow: 0px 5px 5px black; /* Sombra projetada para o card */
+}
+
+/* Estilos para o contêiner de informações do card */
+.card_infos {
+  display: flex; /* Usa flexbox para layout */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilos para o contêiner de texto dentro do card */
+.card_infos_texto {
+  display: flex; /* Usa flexbox para layout */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  gap: 9px; /* Espaçamento entre os itens */
+  padding-right: 1.75rem; /* Espaçamento interno à direita */
+}
+
+/* Estilos para o contêiner de botões dentro do card */
+.card_botoes {
+  display: flex; /* Usa flexbox para layout */
+  justify-content: space-between; /* Espaça os botões horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 3%; /* Espaçamento interno */
+}
+
+/* Estilos para o subtítulo do card */
+.card_subtitulo {
+  font-family: var(--fonte-principal); /* Define a fonte para o subtítulo */
+  color: var(--laranja); /* Define a cor do texto do subtítulo */
+  font-weight: 700; /* Define o peso da fonte (negrito) */
+  font-size: 1rem; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o título do card */
+.card_titulo {
+  font-family: var(--fonte-principal); /* Define a fonte para o título */
+  color: var(--azul); /* Define a cor do texto do título */
+  font-weight: 900; /* Define o peso da fonte (negrito intenso) */
+}
+
+/* Estilos para o parágrafo dentro do card */
+.card_p {
+  font-family: var(--fonte-principal) sans-serif; /* Define a fonte para o parágrafo */
+  font-weight: 400; /* Define o peso da fonte (normal) */
+}
+
+/* Estilos para o botão dentro do card */
+.botao {
+  border-color: var(--laranja); /* Define a cor da borda do botão */
+  background-color: var(--laranja); /* Define a cor de fundo do botão */
+  color: var(--branco); /* Define a cor do texto do botão */
+  padding: 1rem 2rem; /* Espaçamento interno do botão (vertical e horizontal) */
+  text-align: center; /* Alinha o texto ao centro */
+  text-decoration: solid; /* Define a decoração do texto (não sublinhado) */
+  font-size: 1rem; /* Define o tamanho da fonte do botão */
+}
+
+/* Estilos específicos para telas maiores que 768px de largura */
+@media (min-width: 768px) {
+  /* Estilos para a estrela dentro das informações do card */
+  .card_infos_estrela {
+      scale: 60%; /* Reduz o tamanho da estrela para 60% do tamanho original */
+  }
+
+  /* Estilos para o contêiner de informações do card */
+  .card_infos {
+      display: flex; /* Usa flexbox para layout */
+      justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  }
+
+  /* Estilos para o contêiner de texto dentro do card em telas maiores */
+  .card_infos_texto {
+      display: flex; /* Usa flexbox para layout */
+      flex-direction: column; /* Alinha os itens verticalmente */
+      gap: 9px; /* Espaçamento entre os itens */
+      font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+      padding-right: 1rem; /* Ajusta o espaçamento interno à direita */
+  }
+}

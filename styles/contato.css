@@ -1,0 +1,66 @@
+/* Estilo para o campo de e-mail no formulário de contato */
+.contato_email {
+    background-color: transparent; /* Define o fundo como transparente */
+    border: 1px solid var(--azul); /* Define a borda com 1px de largura e cor azul */
+    color: #000000; /* Define a cor do texto como preta */
+    border-radius: 24px; /* Adiciona bordas arredondadas com raio de 24px */
+    padding: 1rem; /* Adiciona preenchimento interno de 1rem */
+    width: 90%; /* Define a largura do campo como 90% do elemento pai */
+}
+
+/* Estilo para o texto de placeholder no campo de e-mail */
+.contato_email::placeholder {
+    font-family: var(--fonte-principal); /* Define a fonte do placeholder usando a variável CSS --fonte-principal */
+    font-size: 1em; /* Define o tamanho da fonte do placeholder */
+    font-weight: 400; /* Define o peso da fonte do placeholder */
+    text-align: center; /* Alinha o texto do placeholder ao centro */
+    color: var(--azul); /* Define a cor do texto do placeholder como a cor azul */
+    background: url(../assets/Email.svg) no-repeat; /* Define a imagem de fundo e evita a repetição */
+    background-position: 1em; /* Posiciona a imagem de fundo a 1em do início */
+}
+
+/* Estilo para o container de texto no formulário de contato */
+.contato_texto {
+    display: flex; /* Usa o layout flexível */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    padding: 1.5rem; /* Adiciona preenchimento interno de 1.5rem */
+    gap: 16px; /* Adiciona um espaço de 16px entre os itens */
+}
+
+/* Estilo para o título dentro do container de texto */
+.contato_texto_titulo {
+    font-family: var(--fonte-principal); /* Define a fonte do título usando a variável CSS --fonte-principal */
+    font-weight: 500; /* Define o peso da fonte do título */
+    font-size: 1.125em; /* Define o tamanho da fonte do título */
+    color: var(--azul); /* Define a cor do título como azul */
+}
+
+/* Estilo para o texto dentro do container de texto */
+.contato_texto_texto {
+    font-family: var(--fonte-principal); /* Define a fonte do texto usando a variável CSS --fonte-principal */
+    font-size: 1.125em; /* Define o tamanho da fonte do texto */
+    font-weight: 400; /* Define o peso da fonte do texto */
+    column-rule: var(--azul); /* Define a cor da linha entre colunas (não é aplicado aqui, pode ser removido) */
+}
+
+/* Estilo geral para o container de contato */
+.contato {
+    display: flex; /* Usa o layout flexível */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    padding: 1.5rem 1.5rem 1.875rem 1.5rem; /* Adiciona preenchimento interno com valores específicos para cada lado */
+}
+
+/* Estilos específicos para telas com largura mínima de 768px */
+@media (min-width: 768px) {
+    .contato {
+        flex-direction: row; /* Alinha os itens em uma linha para telas maiores */
+        padding: 1.5rem 1.5rem 1.875rem 1.5rem; /* Mantém o mesmo padding */
+    }
+
+    .contato_email {
+        width: 50%; /* Define a largura do campo de e-mail como 50% do elemento pai */
+        height: 20%; /* Define a altura do campo de e-mail como 20% do elemento pai */
+    }
+
+}

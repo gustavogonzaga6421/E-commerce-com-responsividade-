@@ -1,0 +1,48 @@
+/* Normaliza o estilo para todos os elementos HTML para garantir consistência entre navegadores */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0; /* Remove as margens padrões */
+    padding: 0; /* Remove os preenchimentos padrões */
+    border: 0; /* Remove as bordas padrões */
+    font-size: 100%; /* Define o tamanho da fonte como padrão */
+    font: inherit; /* Herda as propriedades da fonte do elemento pai */
+    vertical-align: baseline; /* Alinha os elementos de forma consistente */
+}
+
+/* Define a altura da linha padrão do corpo do documento */
+body {
+    line-height: 1; /* Define a altura da linha como 1 (normal) */
+}
+
+/* Remove o estilo de lista padrão */
+ol, ul {
+    list-style: none; /* Remove as marcas (bullets/números) das listas ordenadas e não ordenadas */
+}
+
+/* Remove as aspas padrão dos elementos blockquote e q */
+blockquote, q {
+    quotes: none; /* Remove as aspas padrão dos elementos de citação */
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: ''; /* Define o conteúdo das pseudo-elementos como vazio */
+    content: none; /* Garante que o conteúdo seja vazio */
+}
+
+/* Remove espaçamento entre células da tabela */
+table {
+    border-collapse: collapse; /* Faz com que as bordas das células se sobreponham */
+    border-spacing: 0; /* Remove o espaçamento entre células da tabela */
+}

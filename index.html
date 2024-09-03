@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce - Gustavo (com responsividade)</title>
+    <!-- Link para o reset de CSS para garantir uma base consistente -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Link para o CSS principal do site -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Link para o CSS do Swiper (biblioteca de carrosséis) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link para o JavaScript do Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="cabecalho">
+        <div class="cabecalho_conteiner">
+            <!-- Menu hambúrguer para navegação responsiva -->
+            <span class="cabecalho_menu_hamburguer"></span>
+            <!-- Logo do site -->
+            <img src="assets/Polygon 1 (Stroke).svg" alt="Logo da Codebooks">
+        </div>
+        <div class="cabecalho_conteiner">
+            <!-- Links para ícones de favoritos, compras e usuário -->
+            <a href="#" class="cabecalho_link">
+                <img src="assets/Favoritos.svg" alt="Favoritos">
+            </a>
+            <a href="#" class="cabecalho_link">
+                <img src="assets/Group.svg" alt="Compras">
+            </a>
+            <a href="#" class="cabecalho_link">
+                <img src="assets/Usuario.svg" alt="Usuário">
+            </a>    
+        </div>
+    </header>
+
+    <!-- Conteúdo principal do site -->
+    <main>
+        <!-- Seção do banner -->
+        <section class="banner">
+            <h2 class="banner_titulo">Já sabe por onde começar?</h2>
+            <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <!-- Campo de pesquisa -->
+            <input type="search" class="banner_pesquisa" placeholder="Qual será sua proxima leitura?">
+        </section>
+
+        <!-- Seção de carrossel com últimos lançamentos -->
+        <section class="carrossel">
+            <h2 class="carrossel_titulo">ÚLTIMOS LANÇAMENTOS</h2>
+            <!-- Slider principal do carrossel -->
+            <div class="swiper">
+                <!-- Paginação do slider -->
+                <div class="swiper-pagination"></div>
+                <!-- Wrapper para os slides -->
+                <div class="swiper-wrapper">
+                    <!-- Slides do carrossel -->
+                    <div class="swiper-slide"><img src="assets/livros/ApacheKafka.svg" alt="ApacheKafka"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Arquitetura.svg" alt="Arquitetura"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Javascript.svg" alt="Javascript"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Portugol.svg" alt="Portugol"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Tuning.svg" alt="Tuning"></div>
+                </div>
+            </div>
+            <!-- Card de destaque -->
+            <div class="card">
+                <!-- Informações do card -->
+                <div class="card_infos">
+                    <div class="card_infos_texto">
+                        <h3 class="card_subtitulo">Talvez você também se interesse por...</h3>
+                        <h2 class="card_titulo">Angular 11 e Firebase</h2>
+                        <p class="card_p">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <!-- Imagem relacionada -->
+                    <img src="assets/Angular.svg" alt="símbolo A gigante">
+                </div>
+                <!-- Botões do card -->
+                <div class="card_botoes">
+                    <div>
+                        <img src="assets/Favoritos.svg" alt="favoritos">
+                        <img src="assets/Group.svg" alt="compras">
+                    </div>
+                    <a class="botao" href="#">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de carrossel com mais vendidos -->
+        <section class="carrossel">
+            <h2 class="carrossel_titulo">MAIS VENDIDOS</h2>
+            <!-- Slider principal do carrossel -->
+            <div class="swiper">
+                <!-- Paginação do slider -->
+                <div class="swiper-pagination"></div>
+                <!-- Wrapper para os slides -->
+                <div class="swiper-wrapper">
+                    <!-- Slides do carrossel -->
+                    <div class="swiper-slide"><img src="assets/livros/ApacheKafka.svg" alt="ApacheKafka"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Arquitetura.svg" alt="Arquitetura"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Javascript.svg" alt="Javascript"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Portugol.svg" alt="Portugol"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Tuning.svg" alt="Tuning"></div>
+                </div>
+            </div>
+            <!-- Card de destaque -->
+            <div class="card">
+                <!-- Informações do card -->
+                <div class="card_infos">
+                    <div class="card_infos_texto">   
+                        <img class="card_infos_estrela" src="assets/Estrelinhas.svg" alt="estrela">
+                        <h3 class="card_subtitulo">Autora do Mês.</h3>
+                        <h2 class="card_titulo">Angular 11 e Firebase</h2>
+                        <p class="card_p">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <!-- Imagem da autora -->
+                    <img src="assets/Perfil-escritora 1.svg" alt="autora">
+                </div>
+                <!-- Botões do card -->
+                <div class="card_botoes">
+                    <div>
+                        <img src="assets/Favoritos.svg" alt="favoritos">
+                        <img src="assets/Group.svg" alt="compras">
+                    </div>
+                    <a class="botao" href="#">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de tópicos visitados recentemente -->
+        <section class="topicos">
+            <h4 class="topicos_titulo">TÓPICOS VISITADOS RECENTEMENTE</h4>
+            <div class="topicos_grupos_link">
+                <!-- Links para tópicos visitados -->
+                <a class="topicos_botao" href="#">android</a>
+                <a class="topicos_botao" href="#">marketing Digital</a>
+                <a class="topicos_botao" href="#">Agile</a>
+                <a class="topicos_botao" href="#">HTML CSS</a>
+                <a class="topicos_botao" href="#">Startups</a>
+                <a class="topicos_botao" href="#">Phyton</a>
+                <a class="topicos_botao" href="#">OO</a>
+                <a class="topicos_botao" href="#">Java</a>
+            </div>
+        </section>
+
+        <!-- Seção de contato -->
+        <section class="contato">
+            <div class="contato_texto">
+                <h3 class="contato_texto_titulo">Fique por dentro das novidades!</h3>
+                <p class="contato_texto_texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
+            <!-- Campo de cadastro de e-mail -->
+            <input type="email" class="contato_email" placeholder="Cadastre seu e-mail">
+        </section>
+    </main>
+
+    <!-- Script para inicializar o Swiper -->
+    <script>
+        // Inicializa o Swiper
+        const swiper = new Swiper('.swiper', {
+            // Parâmetros opcionais
+            spaceBetween: 10, // Espaço entre slides
+            slidesPerView: 3, // Número de slides visíveis ao mesmo tempo
+
+            // Configuração da paginação
+            pagination: {
+                el: '.swiper-pagination', // Seleciona o elemento de paginação
+                type: 'bullets', // Tipo de paginação (bolinhas)
+            },
+        });
+    </script>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <h5 class="rodape_titulo">Gustavo Gonzaga</h5>
+        </div>
+    </footer>
+</body>
+</html>

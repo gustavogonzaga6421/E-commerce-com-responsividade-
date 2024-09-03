@@ -1,0 +1,40 @@
+/* Estilo para o banner principal */
+.banner {
+    background: var(--azul-degrade); /* Define o fundo do banner com um gradiente azul */
+    color: #ffffff; /* Define a cor do texto como branca */
+    text-align: center; /* Centraliza o texto dentro do banner */
+    padding: 2.5em 2em; /* Adiciona preenchimento interno (2.5em em cima e embaixo, 2em à direita e à esquerda) */
+}
+
+/* Estilo para o título dentro do banner */
+.banner_titulo {
+    font-weight: 700; /* Define o peso da fonte como negrito */
+    font-size: 18px; /* Define o tamanho da fonte do título */
+}
+
+/* Estilo para o texto dentro do banner */
+.banner_texto {
+    font-weight: 500; /* Define o peso da fonte como semi-negrito */
+    margin: 1em; /* Adiciona uma margem de 1em ao redor do texto */
+}
+
+/* Estilo para o campo de pesquisa dentro do banner */
+.banner_pesquisa {
+    background-color: transparent; /* Define o fundo como transparente */
+    border: 1px solid var(--branco); /* Define a borda com 1px de largura e cor branca */
+    color: #ffffff; /* Define a cor do texto como branca */
+    border-radius: 24px; /* Adiciona bordas arredondadas com raio de 24px */
+    padding: 1em; /* Adiciona preenchimento interno de 1em */
+    width: 100%; /* Define a largura do campo como 100% do elemento pai */
+}
+
+/* Estilo para o texto de placeholder no campo de pesquisa */
+.banner_pesquisa::placeholder {
+    font-family: var(--fonte-principal); /* Define a fonte do placeholder usando a variável CSS --fonte-principal */
+    font-size: 14px; /* Define o tamanho da fonte do placeholder */
+    font-weight: 400; /* Define o peso da fonte do placeholder */
+    text-align: center; /* Alinha o texto do placeholder ao centro */
+    color: var(--branco); /* Define a cor do texto do placeholder como branca */
+    background: url(../assets/Pesquisa.svg) no-repeat; /* Define a imagem de fundo e evita a repetição */
+    background-position: 1em; /* Posiciona a imagem de fundo a 1em do início */
+}

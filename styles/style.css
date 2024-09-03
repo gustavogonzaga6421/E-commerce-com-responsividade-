@@ -1,0 +1,30 @@
+/* Importa os arquivos de estilo específicos para diferentes seções do site */
+@import url(header.css);  /* Estilos para o cabeçalho do site */
+@import url(banner.css);  /* Estilos para a área de banner */
+@import url(carrossel.css); /* Estilos para o carrossel de imagens */
+@import url(card.css);    /* Estilos para cartões de informação */
+@import url(topicos.css); /* Estilos para tópicos ou seções principais */
+@import url(rodape.css);  /* Estilos para o rodapé do site */
+@import url(contato.css); /* Estilos para a página de contato */
+
+/* Importa a fonte "Poppins" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Definição de variáveis CSS para cores e fontes */
+:root {
+    --cor-fundo: #ebecee;  /* Cor de fundo geral do site */
+    --branco: #ffffff;     /* Cor branca */
+    --cor-branco: #F9F9F9; /* Outra tonalidade de branco, para diferenciação */
+    --azul: #002f52;       /* Cor azul principal */
+    --laranja: #EB9B00;    /* Cor laranja de destaque */
+    --azul-degrade: linear-gradient(120deg, #002F52 30%, #326589 70%); /* Gradiente de azul para efeitos visuais */
+    --fonte-principal: "Poppins", sans-serif; /* Fonte principal do site */
+}
+
+/* Estilo básico para o corpo do documento */
+body {
+    background-color: var(--cor-fundo); /* Define a cor de fundo do corpo */
+    font-family: var(--fonte-principal); /* Define a fonte do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    font-weight: 400; /* Define o peso da fonte */
+}

@@ -1,0 +1,43 @@
+/* Estilos para a seção de tópicos */
+.topicos {
+    display: flex; /* Define o contêiner como flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    justify-content: center; /* Centraliza os itens verticalmente dentro do contêiner */
+    background: var(--azul-degrade); /* Define o fundo com um gradiente azul */
+    padding: 1.5rem 0 0 0; /* Define o espaçamento interno: 1.5rem no topo, e 0 nas outras direções */
+}
+
+/* Estilos para o título dos tópicos */
+.topicos_titulo {
+    color: var(--branco); /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Estilos para o grupo de links dos tópicos */
+.topicos_grupos_link {
+    display: flex; /* Define o contêiner dos links como flexível */
+    justify-content: space-evenly; /* Distribui os links com espaçamento igual entre eles */
+    flex-direction: row; /* Organiza os links em uma linha */
+    flex-wrap: wrap; /* Permite que os links se movam para a linha seguinte, se necessário */
+    padding: 2rem 0; /* Define o espaçamento interno: 2rem no topo e em baixo */
+    gap: 16px; /* Define o espaçamento entre os links */
+}
+
+/* Estilos para os botões dos tópicos */
+.topicos_botao {
+    border-color: var(--laranja); /* Define a cor da borda como laranja */
+    background-color: var(--laranja); /* Define a cor de fundo como laranja */
+    color: var(--branco); /* Define a cor do texto como branco */
+    padding: 1rem 2rem; /* Define o espaçamento interno do botão: 1rem vertical e 2rem horizontal */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    text-decoration: none; /* Remove sublinhado do texto do botão */
+    font-size: 1rem; /* Define o tamanho da fonte como 1rem */
+    margin: 1rem 0; /* Define o espaçamento externo: 1rem no topo e em baixo */
+}
+
+/* Estilos para a seção de tópicos em telas com largura mínima de 768px */
+@media (min-width: 768px) {
+    .topicos {
+        padding: 1rem 0 0 0; /* Ajusta o espaçamento interno: 1rem no topo, e 0 nas outras direções */
+    }
+}
